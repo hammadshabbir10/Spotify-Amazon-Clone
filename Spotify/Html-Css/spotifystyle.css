@@ -1,0 +1,782 @@
+/*
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    background-color: black;
+    color:#fff;
+    overflow: hidden;
+
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    padding:0.5rem;
+
+}
+.sidebar {
+    background-color: #000;
+    width:340px;
+    border-radius: 1rem; /*16px
+    margin-right: 0.5rem;
+}
+.main_content { 
+   /* background-color: rgb(48, 45, 45);
+    background-color: #121212;
+    flex:1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music {
+  /*  background-color: rgb(48, 45, 45);
+    background-color: #000;
+    position:fixed;
+    bottom:0px;
+    width:100%;
+    height:72px;
+}
+
+a {
+    text-decoration: none;
+    color:#fff;
+}
+
+.nav {
+    height:100px;
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+ 
+}
+
+.nav-bar {
+    line-height: 2.5rem;
+    opacity:0.7;
+    padding:0.4rem;
+
+}
+
+.nav-bar:hover {
+    opacity:1;
+}
+
+
+.nav-bar i {
+    font-size:1.2rem;
+}
+
+.nav-bar a {
+    font-size:1rem;
+    padding-left:10px;
+}
+
+.library {
+    background-color: #121212;
+    height:450px;
+    border-radius: 1rem;
+    margin-top:0.5rem;
+    padding: 0.5rem 0.75rem;
+
+}
+
+.options {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.lib_option {
+    opacity:0.7;
+}
+
+.lib_option img {
+    height:1.25rem;
+    width:1.25rem;   
+}
+
+.icons {
+    font-size: 1.25rem;
+    display:flex;
+
+}
+.icons i {
+    margin-right:1rem;
+    opacity:0.7;
+}
+
+.icons i:hover {
+    opacity:1;
+}
+
+
+
+.lib_option a {
+    font-size:1rem;
+    padding-left:10px;
+}
+
+.lib_option:hover {
+    opacity: 1;
+}
+
+.box {
+    background-color: #232323;
+    height:8rem;
+    margin:1rem 0 1.5rem 0;
+    padding:0.75rem 1rem;
+    border-radius: 0.75rem;
+}
+
+.box-p1 {
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.box-p2 {
+    font-size: 0.8rem;
+    opacity:0.9;
+}
+
+.badge {
+    background-color: #fff;
+    border-radius: 100px;
+    border:black;
+    padding: 0.25rem 1rem;
+    height:2rem;
+    font-weight: 200;
+    width:fit-content;
+}   
+
+.sticky_nav {
+    position:sticky;
+    display:flex;
+    background-color: #121212;
+    top:0;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 1rem;
+    z-index: 10;
+
+}
+
+.sticky-nav-options button {
+    margin-right:1rem;
+}
+
+.dark-badge {
+    background-color: black;
+    color:white;
+}
+
+@media (max-width:1000px) { 
+    .hide {
+        display:none;
+    }
+
+}
+
+.card {
+    background-color: #232323;
+    width:150px;
+    border-radius: 0.5rem;
+    padding:1.2rem;
+    margin-left:1.5rem;
+    margin-top:1rem;
+}
+
+.cards-container {
+   display:flex;
+   flex-wrap: wrap;
+}
+
+.card-img {
+
+    width:100%;
+    border-radius:0.5rem;
+}
+
+.card-title {
+    font-weight:600;
+}
+
+.card-info {
+    font-weight:300;
+    opacity:0.8;
+}
+
+.footer {
+    height:300px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.line {
+    height:50%;
+    width:90%;
+    border-top:1px solid white;
+    opacity:0.4;
+}
+
+.music {
+    display:flex;
+}
+.albums {
+    width:25%;
+}
+.player {
+    width:50%;
+}
+.controls {
+    width:25%;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:8px;
+    
+}
+
+.player-control-icon {
+
+    height:1rem;
+    line-height: 10px;
+    margin-right: 2rem;
+    opacity: 0.7;
+}
+
+.player-control-icon:hover {
+    opacity: 1;
+}
+
+.playback-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar {
+    width:70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+    background-color: #0b8a75;
+    border-radius: 100px;
+    height:0.24rem;
+}
+
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top:-6px;
+}
+
+*/
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    background-color: rgb(3, 65, 34);
+    color:#fff;
+    overflow: hidden;
+
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    padding:0.5rem;
+
+}
+.sidebar {
+
+    background-color: rgb(8, 102, 55);
+    background-color: rgb(3, 65, 34);
+    width:340px;
+    border-radius: 1rem; /*16px*/
+    margin-right: 0.5rem;
+}
+.main_content { 
+    background-color: rgb(8, 102, 55);
+    background-color: rgb(3, 65, 34);
+    flex:1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music {
+    background-color: rgb(8, 102, 55);
+    background-color: rgb(3, 65, 34);
+    position:fixed;
+    bottom:0px;
+    width:100%;
+    height:72px;
+}
+
+a {
+    text-decoration: none;
+    color:#fff;
+}
+
+.nav {
+    height:100px;
+    background-color: rgb(21, 124, 72);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+    margin-top:0.3rem;
+ 
+}
+
+.nav-bar {
+    line-height: 2.5rem;
+    opacity:0.7;
+    padding:0.4rem;
+
+}
+
+.nav-bar:hover {
+    opacity:1;
+}
+
+
+.nav-bar i {
+    font-size:1.2rem;
+}
+
+.nav-bar a {
+    font-size:1rem;
+    padding-left:10px;
+}
+
+.library {
+    background-color: rgb(14, 100, 57);
+    height:450px;
+    border-radius: 1rem;
+    margin-top:2rem;
+    padding: 0.5rem 0.75rem;
+
+}
+
+.options {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(14, 100, 57);
+  
+}
+
+.lib_option {
+    opacity:0.7;
+}
+
+.lib_option img {
+    height:1.25rem;
+    width:1.25rem;   
+}
+
+.icons {
+    font-size: 1.25rem;
+    display:flex;
+
+}
+.icons i {
+    margin-right:1rem;
+    opacity:0.7;
+}
+
+.icons i:hover {
+    opacity:1;
+}
+
+
+
+.lib_option a {
+    font-size:1rem;
+    padding-left:10px;
+}
+
+.lib_option:hover {
+    opacity: 1;
+}
+
+.box {
+    background-color: rgb(19, 119, 69);
+    height:8rem;
+    margin:1rem 0 1.5rem 0;
+    padding:0.75rem 1rem;
+    border-radius: 0.75rem;
+}
+
+.box-p1 {
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.box-p2 {
+    font-size: 0.8rem;
+    opacity:0.9;
+}
+
+.box button:hover {
+    font-weight:700;
+    color:white;
+    background-color: rgb(3, 63, 13);
+
+}
+.badge {
+    background-color: #fff;
+    border-radius: 100px;
+    border:black;
+    padding: 0.25rem 1rem;
+    height:2rem;
+    font-weight: 200;
+    width:fit-content;
+}   
+
+.sticky_nav {
+    position:sticky;
+    display:flex;
+    background-color: rgb(8, 100, 54);
+    top:0;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 1rem;
+    z-index: 10;
+
+}
+
+.sticky-nav-options button {
+    margin-right:1rem;
+}
+
+.dark-badge {
+    background-color: black;
+    color:white;
+}
+
+@media (max-width:1000px) { 
+    .hide {
+        display:none;
+    }
+    .content p {
+        display: none;
+    }
+
+}
+
+.card {
+    background-color: rgb(5, 59, 32);
+    background-color: rgb(7, 77, 42);
+    width:150px;
+    border-radius: 0.5rem;
+    padding:1.2rem;
+    margin-left:1.5rem;
+    margin-top:1rem;
+}
+
+.cards-container {
+   display:flex;
+   flex-wrap: wrap;
+}
+
+.card-img {
+
+    width:100%;
+    border-radius:0.5rem;
+}
+
+.card-title {
+    font-weight:600;
+}
+
+.card-info {
+    font-weight:300;
+    opacity:0.8;
+}
+
+.footer {
+    height:300px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+h2 {
+    color:rgba(231, 235, 232);
+}
+
+.line {
+
+    height:50%;
+    width:90%;
+    border-top:1px solid white;
+    opacity:0.4;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.company p:hover {
+    text-decoration: underline;
+    opacity: 1;
+    color:rgb(245, 247, 244);
+    cursor: pointer;
+}
+
+.line .community p:hover {
+    text-decoration: underline;
+    opacity: 1;
+    color:rgb(245, 247, 244);
+    cursor: pointer;
+}
+
+.line .useful-links p:hover {
+    text-decoration: underline;
+    opacity: 1;
+    color:rgb(245, 247, 244);
+    cursor: pointer;
+}
+
+.line .plans p:hover {
+    text-decoration: underline;
+    opacity: 1;
+    color:rgb(245, 247, 244);
+    cursor: pointer;
+}
+
+
+.music {
+    display:flex;
+}
+.albums {
+    width:25%;
+}
+.player {
+    width:50%;
+}
+.controls {
+    width:25%;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:8px;
+    margin-left: 40px;
+
+}
+
+.player-control-icon {
+
+    height:1rem;
+    line-height: 10px;
+    margin-right: 2rem;
+    opacity: 0.7;
+}
+
+.player-control-icon:hover {
+    opacity: 1;
+}
+
+.playback-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar {
+    width:70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+    background-color: #0b8a75;
+    border-radius: 100px;
+    height:0.24rem;
+}
+
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top:-6px;
+}
+
+/*
+.content h1 {
+
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    margin:12px;
+    line-height:50px;
+    
+
+  }
+*/
+  @keyframes fadeIn {
+    10% {
+        opacity:0.2;
+    }
+    40%{
+        opacity: 0.5;
+    }
+    70%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+  }
+
+
+  .content h1 {
+    
+    position:relative;
+    font-size: 3.2vw;
+    bottom:10px;
+    /*margin-left: 13px;*/
+    color: rgb(0, 0, 0);
+    text-align: center;
+    -webkit-text-stroke: 0.3vw rgb(5, 119, 39);
+    text-transform: uppercase;
+    opacity:0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.7s;
+  }
+ 
+  /*
+  .content p {
+    font-size: 2vw;
+    margin: 10px 0 0;
+    text-align: center;
+    color: rgb(29, 148, 102);
+    opacity:0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.7s;
+  }
+*/
+
+  .sticky_nav .controls .content p {
+    font-size: 2vw;
+    width:300px;
+    margin: 10px 0 0;
+    color: rgb(29, 148, 102);
+    opacity:0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.7s;
+  }
+
+  .controls .icn {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:20px;
+    margin-top:30px;
+    margin-right: 5rem;
+    opacity:1;
+    color:rgb(168, 167, 167);
+    
+  }
+
+  .controls .icn i:hover {
+    font-size:20px;
+    color:rgb(255, 252, 252);
+
+    
+  }
+
+  .spotify-icon {
+    position: sticky;
+    left: 60%;
+    top: 30%;
+    width: 100px;
+    height: 200px;
+    color: rgb(3, 68, 30);
+    -webkit-text-stroke: 0.3vw rgb(2, 37, 19);
+    font-size: 70px;
+    opacity: 1;
+    animation: spin 5s linear infinite;
+    z-index: 10;
+  }
+  
+  
+  @keyframes spin {
+    
+    0% {
+      
+      transform: rotate(0deg);
+      font-size: 70px;
+    }
+    10% {
+      
+        transform: rotate(45deg);
+        font-size: 90px;
+      }
+    20% {
+
+      transform: rotate(90deg);
+      font-size: 110px;
+    }
+    30% {
+
+        transform: rotate(130deg);
+        font-size: 130px;
+      }
+
+    40% {
+
+        transform: rotate(170deg);
+        font-size: 150px;
+    }
+
+    50% {
+
+        transform: rotate(200deg);
+        font-size: 170px;
+    }
+
+    60% {
+
+      transform: rotate(250deg);
+      font-size: 190px;
+    }
+    80% {
+
+        transform: rotate(300deg);
+        font-size: 210px;
+      }
+
+    100% {
+
+      transform: rotate(360deg);
+      font-size: 230px;
+    }
+  }
+  
